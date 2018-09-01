@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pere"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.abderrahimdev.brailleapp.MainActivity">
+
+    <TableLayout
+        android:id="@+id/left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/background_dark"
+        android:paddingRight="1dp">
+
+        <TableRow
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_light" />
+
+        <TableRow
+            android:id="@+id/l2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_light" />
+
+        <TableRow
+            android:id="@+id/l3"
+            android:layout_weight="1"
+            android:background="@android:color/background_light" />
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lettre"
+            android:layout_width="133dp"
+            android:layout_height="226dp"
+            android:layout_marginLeft="60pt"
+            android:layout_marginTop="40dp"
+            android:textSize="180sp" />
+
+        <TextView
+            android:id="@+id/phrase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60pt"
+            android:textSize="40sp"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/background_dark"
+        android:paddingLeft="1dp">
+
+        <TableRow
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_light" />
+
+        <TableRow
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_light" />
+
+        <TableRow
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/background_light" />
+
+    </TableLayout>
+
+</LinearLayout>
